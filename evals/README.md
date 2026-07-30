@@ -51,7 +51,7 @@ Blind A/B against baseline, judged by `gemini-3.1-pro-preview` (14 comparisons p
 | gemini-2.5-flash-lite | 4-4 (6) | 12-2 (0) |
 | gemini-2.5-flash-lite, rules-in-description | 10-2 (2) | — |
 
-The content wins decisively when it's in context (`forced`), but models often never read the skill file, so plain auto-triggering only carries the one-line description. Embedding the minimum rules in the description itself (always in context, 1024-char budget) recovered most of the forced-mode gain on flash-lite. Belt and braces for dispatchers: tell the agent to read the skill in the dispatch prompt, use `/skill:empathy`, or append `empathy.md` to the system prompt.
+The content wins decisively when it's in context (`forced`), but models often never read the skill file, so plain auto-triggering only carries the one-line description. Embedding the minimum rules in the description itself (always in context, 1024-char budget) recovered most of the forced-mode gain on flash-lite. Belt and braces for dispatchers: tell the agent to read the skill in the dispatch prompt, use `/skill:empathy`, or append `SKILL.md` to the system prompt.
 
 Reproduce with:
 

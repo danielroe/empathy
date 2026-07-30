@@ -50,7 +50,7 @@ git clone https://github.com/danielroe/empathy ~/.pi/agent/skills/empathy
 git clone https://github.com/danielroe/empathy ~/.openclaw/skills/empathy
 ```
 
-The skill content lives in [`empathy.md`](./empathy.md); `SKILL.md` is a symlink so the repo installs as a standard skill package.
+The skill content lives in [`SKILL.md`](./SKILL.md).
 
 ### Making sure it actually loads
 

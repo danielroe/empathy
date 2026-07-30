@@ -9,7 +9,7 @@
 set -euo pipefail
 
 cd "$(dirname "$0")"
-SKILL="$(cd .. && pwd)/empathy.md"
+SKILL="$(cd .. && pwd)/SKILL.md"
 HARNESS="${HARNESS:-pi}"
 RESULTS="${RESULTS:-results}"
 mkdir -p "$RESULTS"
