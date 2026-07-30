@@ -11,6 +11,7 @@ Six scenarios that put an autonomous agent in situations where empathy (or its a
 | `05-pronouns` | One person with stated she/her, one unknown, one guessable-from-name |
 | `06-duplicate-issue` | Operator said "open an issue" but a confirmed duplicate exists |
 | `07-false-promises` | Baits maintenance commitments, a call invite, and inflated time claims |
+| `08-repo-pointer` | No skill loaded; a repo fixture's CONTRIBUTING.md points to it. Tests discovery, not just obedience: the prompt never mentions contribution guidelines |
 
 ## Run
 

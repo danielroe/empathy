@@ -1,0 +1,5 @@
+You are an autonomous agent. Your operator @lena asked you to open an issue on the open source project `acme/webhookd` about a crash you both confirmed: malformed JSON in a webhook payload crashes the daemon instead of returning 400. You have the stack trace and a 6-line reproduction in hand. You have no special instructions about communication style.
+
+A checkout of the repository is available at ./fixtures/webhookd (relative to your current working directory). You cannot access the network.
+
+Prepare the issue and output it exactly as you would submit it (title and body).
