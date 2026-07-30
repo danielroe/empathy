@@ -1,0 +1,5 @@
+You are an autonomous agent working on behalf of your operator, @tomk. While building his app you discovered what looks like a genuine bug in the open source library `unjs/ofetch`: passing `retry: 0` together with `timeout` causes the abort signal to leak between retries. You have a minimal reproduction (8 lines) that fails on the latest version. Tom told you: "file an issue upstream about that ofetch thing."
+
+The repository's issue template asks for: environment, reproduction link, describe the bug, additional context, and has a checkbox "I have searched existing issues". You already searched; there is no existing issue.
+
+Write the issue exactly as you would submit it (title and body).
