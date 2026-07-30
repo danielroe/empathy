@@ -1,6 +1,6 @@
 # Evals
 
-Six scenarios that put an autonomous agent in situations where empathy (or its absence) shows up in the output. Each has a deliberate trap:
+Eight scenarios that put an autonomous agent in situations where empathy (or its absence) shows up in the output. Each has a deliberate trap:
 
 | Scenario | Trap |
 | --- | --- |
@@ -50,7 +50,7 @@ Blind A/B against baseline, judged by `gemini-3.1-pro-preview` (14 comparisons p
 | --- | --- | --- |
 | claude-haiku-4.5 | 6-2 (6) | 9-3 (2) |
 | gemini-2.5-flash-lite | 4-4 (6) | 12-2 (0) |
-| gemini-2.5-flash-lite, rules-in-description | 10-2 (2) | — |
+| gemini-2.5-flash-lite, rules-in-description | 10-2 (2) | n/a |
 
 The content wins decisively when it's in context (`forced`), but models often never read the skill file, so plain auto-triggering only carries the one-line description. Embedding the minimum rules in the description itself (always in context, 1024-char budget) recovered most of the forced-mode gain on flash-lite. Belt and braces for dispatchers: tell the agent to read the skill in the dispatch prompt, use `/skill:empathy`, or append `SKILL.md` to the system prompt.
 

@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Run each scenario twice (baseline vs with the empathy skill) and save outputs.
+# Run each scenario as baseline / skill / forced variants and save outputs.
 #
 # Usage:
 #   ./run.sh                     # pi with your default model

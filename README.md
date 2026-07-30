@@ -60,7 +60,7 @@ For autonomous agents please consider forcing the full skill:
 
 - say "read the empathy skill before posting anything a human will read" in your dispatch prompt
 - or invoke it directly (`/skill:empathy` in pi)
-- or append `empathy.md` to the agent's system prompt
+- or append `SKILL.md` to the agent's system prompt
 
 ## For maintainers
 
