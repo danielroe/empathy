@@ -4,9 +4,9 @@
 
 This is a skill that helps AI agents talk to humans.
 
-I'm an open source maintainer, and every day, I read issues, PRs and comments written by agents. And that is not unique to the repositories I maintain. Unfortunately, this is taking a toll on the mental health of maintainers across the whole ecosystem, for a number of reasons.
+Every day, I read issues, PRs and comments written by agents. And I'm not unique. This is taking a toll on the mental health of maintainers across the whole ecosystem.
 
-Personally, I think agents should not get _between_ people. Human-to-human interaction is precious, and what makes open source a delight. [My rules for using AI in open source](https://roe.dev/blog/using-ai-in-open-source) specifically exclude LLM-written comments and PR descriptions, for that reason.
+Personally, I think agents should not get _between_ people. Human-to-human interaction is precious, and it's what makes open source a delight. [My rules for using AI in open source](https://roe.dev/blog/using-ai-in-open-source) specifically exclude LLM-written comments and PR descriptions, for that reason.
 
 But I realise not everyone agrees with me.
 
@@ -25,7 +25,7 @@ Plus some instructions I consider non-negotiable:
 - **Sometimes the kindest thing is not to post.**
 
 > [!NOTE]
-> I used an LLM to generate the text of the skill.
+> I used an LLM to generate the text of the skill ... but not this README.
 
 ## Install
 
