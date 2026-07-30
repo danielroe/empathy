@@ -6,13 +6,15 @@ set -euo pipefail
 cd "$(dirname "$0")"
 model_args=()
 [ -n "${JUDGE_MODEL:-}" ] && model_args=(--model "$JUDGE_MODEL")
+[ -n "${JUDGE_PROVIDER:-}" ] && model_args+=(--provider "$JUDGE_PROVIDER")
 
 VARIANT="${VARIANT:-skill}" # skill or forced
+RESULTS="${RESULTS:-results}"
 declare -i wins_base=0 wins_var=0 ties=0
 
 for f in scenarios/${1:-}*.txt; do
   name="$(basename "$f" .txt)"
-  for base in results/$name.baseline.md results/$name.baseline.[0-9]*.md; do
+  for base in "$RESULTS"/$name.baseline.md "$RESULTS"/$name.baseline.[0-9]*.md; do
     [ -f "$base" ] || continue
     skill="${base/baseline/$VARIANT}"
     [ -f "$skill" ] || { echo "skip $name (missing $skill)"; continue; }
@@ -28,7 +30,7 @@ for f in scenarios/${1:-}*.txt; do
     echo "$verdict"
     echo
 
-    winner="$(echo "$verdict" | grep -io 'Verdict: *\(A\|B\|tie\)' | tail -1 | grep -io 'A$\|B$\|tie')"
+    winner="$(echo "$verdict" | grep -io 'Verdict:[* ]*\(Response \)\?\(A\|B\|tie\)' | tail -1 | grep -io 'A$\|B$\|tie')"
     case "$winner" in
       tie|Tie|TIE) ties+=1 ;;
       A|a) if [ "$a" = "$base" ]; then wins_base+=1; else wins_var+=1; fi ;;

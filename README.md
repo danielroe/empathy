@@ -52,6 +52,16 @@ git clone https://github.com/danielroe/empathy ~/.openclaw/skills/empathy
 
 The skill content lives in [`empathy.md`](./empathy.md); `SKILL.md` is a symlink so the repo installs as a standard skill package.
 
+### Making sure it actually loads
+
+Models [don't reliably read skills](./evals/README.md) before composing text, so the skill's description embeds the minimum rules so they're always in context.
+
+For autonomous agents please consider forcing the full skill:
+
+- say "read the empathy skill before posting anything a human will read" in your dispatch prompt
+- or invoke it directly (`/skill:empathy` in pi)
+- or append `empathy.md` to the agent's system prompt
+
 If you dispatch agents to interact with projects I maintain, I'd be delighted if you loaded this skill first. And if you have ideas for making agents better guests in open source spaces, I would love to hear them.
 
 Much ❤️
